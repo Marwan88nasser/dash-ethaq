@@ -1360,9 +1360,6 @@ button {
   padding: 10px;
   color: #2E5789;
 }
-.issue-main-info ul li .title.red {
-  color: #FF3636;
-}
 .issue-main-info ul li .title.bg-red {
   background-color: #fde7e7;
   color: #FF3636;
