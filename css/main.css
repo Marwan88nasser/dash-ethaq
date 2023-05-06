@@ -471,6 +471,181 @@ input[readonly]:focus {
   height: 1.7em;
 }
 
+@media print {
+  .not-print {
+    display: none !important;
+  }
+  .table-responsive {
+    width: 100% !important;
+  }
+  .ar {
+    font-size: 19px !important;
+  }
+  .patientFile .row > * {
+    width: 20%;
+  }
+  .patientFile .check {
+    width: 50% !important;
+  }
+  .patientFile .data-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  .patientFile .data-content div {
+    width: 50%;
+  }
+  .patientFile .data-content div p {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  .patientFile .wrapper {
+    display: flex;
+  }
+  .patientFile .wrapper .parent {
+    display: flex;
+    flex-direction: column;
+  }
+  .patientFile .wrapper .parent .data-content div {
+    width: 100%;
+  }
+  .patientFile .wrapper .parent .data-content div textarea {
+    min-height: 140px !important;
+    width: 100%;
+  }
+  .data-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100% !important;
+  }
+  .data-content div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .data-content div div {
+    width: 50%;
+  }
+  .data-content div div p {
+    font-size: 8px !important;
+    white-space: wrap !important;
+  }
+  .data-content div div.holder {
+    width: 100% !important;
+  }
+  .data-content div div.holder .special {
+    width: 100% !important;
+  }
+  .data-content div div.holder .special textarea {
+    width: 100% !important;
+    min-height: 100px !important;
+  }
+  .casher-invoice .invoice-content .logo-holder .the_image {
+    width: 10px !important;
+  }
+  .casher-invoice .invoice-content .invoice-name {
+    font-size: 10px !important;
+  }
+  .casher-invoice .the_address p {
+    font-size: 11px !important;
+  }
+  .casher-invoice .tax {
+    font-size: 11px;
+  }
+  .casher-invoice .the_date {
+    font-size: 11px;
+  }
+  .casher-invoice div b {
+    font-size: 11px !important;
+  }
+  .casher-invoice .main-table tr th {
+    font-size: 7px;
+    padding: 4px;
+  }
+  .casher-invoice .main-table tr td {
+    font-size: 7px;
+    padding: 4px;
+  }
+  .casher-invoice .bototm-table .dd {
+    font-size: 11px !important;
+  }
+  .casher-invoice .bototm-table .dd .nn {
+    font-size: 11px !important;
+  }
+  .casher-invoice .wel {
+    margin: auto !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+  .casher-invoice .bar_code_holder {
+    width: 40% !important;
+  }
+  .casher-invoice .bar_code_holder svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .casher-invoice .parent-boxes-info {
+    margin-top: 10px !important;
+    width: 60% !important;
+  }
+}
+.casher-invoice {
+  width: 100%;
+  font-size: 14px;
+  min-height: 100vh;
+  background-color: #f7f6fe;
+}
+@media print {
+  .casher-invoice {
+    padding: 0 !important;
+    font-size: 13px;
+  }
+  .casher-invoice .container {
+    width: 100% !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .casher-invoice td,
+  .casher-invoice th {
+    padding: 2px !important;
+  }
+}
+.casher-invoice .invoice-content .logo-holder .the_image {
+  width: 125px;
+  height: auto;
+  max-width: 100%;
+}
+.casher-invoice .invoice-content .bototm-table b {
+  font-size: 16px;
+  color: #444;
+  font-weight: 600;
+}
+@media print {
+  .casher-invoice .invoice-content .bar_code_holder {
+    width: 42% !important;
+  }
+  .casher-invoice .invoice-content .bar_code_holder svg {
+    width: 100% !important;
+  }
+}
+.casher-invoice .invoice-content .parent-boxes-info {
+  width: 35%;
+}
+.casher-invoice .invoice-content .parent-boxes-info .box-info-border {
+  border: 1px dotted black;
+  padding: 2px;
+  display: flex;
+  font-size: 15px !important;
+  align-items: center;
+  gap: 1px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .app {
   position: relative;
   min-height: calc(100vh - 66px);
