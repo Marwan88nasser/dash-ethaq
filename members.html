@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>الرئيسية</title>
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main File Css  -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- Start layout -->
+        <nav class="main-navbar">
+            <div
+                class="container-fluid d-flex align-items-lg-center align-items-stretch flex-column flex-xl-row gap-3 justify-content-between"
+            >
+                <div class="logo">
+                    <div
+                        class="tog-active d-block d-lg-none"
+                        data-tog="true"
+                        data-active=".app"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <img src="./img/logo.svg" class="img" alt="" />
+                    <div class="text d-none d-lg-block">
+                        إيثاق لخدمات الأعمال
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2rem">
+                    <div class="list-item d-none d-lg-flex">
+                        <div class="main-btn btn-purple">
+                            <span class="main-badge">3</span>
+                            طلبات تفعيل الاستشارة
+                            <img
+                                src="./img/icons/contract-white.svg"
+                                alt=""
+                                class="icon"
+                            />
+                        </div>
+                        <div class="main-btn btn-orange">
+                            <span class="main-badge">3</span>
+                            تراخيص وسجلات بانتظار التحقق
+                            <img
+                                src="./img/icons/user-white.svg"
+                                alt=""
+                                class="icon"
+                            />
+                        </div>
+                        <div class="main-btn">
+                            الطلبات الحديثة
+                            <img
+                                src="./img/icons/bell-white.svg"
+                                alt=""
+                                class="icon"
+                            />
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2rem">
+                        <div class="dropdown icon-nav">
+                            <div class="main-badge badge-info">0</div>
+                            <button
+                                class="dropdown-toggle icon-nav"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    src="./img/icons/msg.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown icon-nav">
+                            <div class="main-badge">0</div>
+                            <button
+                                class="dropdown-toggle icon-nav"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    src="./img/icons/bell.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown info-user ms-auto">
+                        <button
+                            class="dropdown-toggle d-flex align-items-center gap-2 content"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <div class="text">
+                                <div class="name">
+                                    <i class="fas fa-angle-down"></i>
+                                    Name Of the manager
+                                </div>
+                                <div class="dic">Admin Manager</div>
+                            </div>
+                            <div class="img">
+                                <img
+                                    src="./img/icons/user-black.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </div>
+                        </button>
+                        <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                        >
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    تسجيل الخروج
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="app">
+            <div class="sidebar">
+                <div
+                    class="tog-active d-none d-lg-block"
+                    data-tog="true"
+                    data-active=".app"
+                >
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="list">
+                    <li class="list-item active">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                الرئيسية
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                اشعارات المشتركين
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a
+                            data-bs-toggle="collapse"
+                            href="#collapse-1"
+                            aria-expanded="false"
+                        >
+                            <div>
+                                <i class="fa-solid fa-gear icon"></i>
+                                الإعدادات
+                            </div>
+                            <i class="fa-solid fa-angle-right arrow"></i>
+                        </a>
+                    </li>
+                    <div id="collapse-1" class="collapse item-collapse">
+                        <li class="list-item">
+                            <a href="settings.html" class="">
+                                <div>
+                                    <i class="fa-solid fa-gear icon"></i>
+                                    الإعدادات
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="list-item">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                المشرفين
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                المشتركين
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-side">
+                <div class="main-title">
+                    <div class="small">المستخدمين</div>
+                    <div class="large">الأعضاء</div>
+                </div>
+                <div
+                    class="bar-obtions d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4"
+                >
+                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                        <div class="btn-holder">
+                            <button
+                                class="main-btn btn-main-color"
+                                style="padding: 10px 20px"
+                            >
+                                إضافة <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="select-holder">
+                            <select
+                                name=""
+                                id=""
+                                class="form-select select-setting"
+                                style="padding: 10px 15px 10px 45px"
+                            >
+                                <option value="">التصنيفات</option>
+                            </select>
+                        </div>
+                        <div class="box-selected">
+                            <div class="info">
+                                <input
+                                    type="checkbox"
+                                    class="main-checkbox form-check-input"
+                                    name=""
+                                    id=""
+                                    checked
+                                />
+                                <span>تم تحديد 1 عناصر</span>
+                            </div>
+                            <div class="dropdown">
+                                <button
+                                    class="dropdown-toggle dropdown-remove-arrow"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="img/icons/dots.png"
+                                        alt="icon"
+                                        width="22"
+                                    />
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >قريبا...</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-search">
+                        <img src="img/icons/search.png" alt="icon" />
+                        <input type="search" name="" id="" placeholder="بحث" />
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="main-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <img
+                                        src="img/icons/bars-dots.png"
+                                        alt="icon"
+                                        width="20"
+                                    />
+                                </th>
+                                <th>أسم المحامي</th>
+                                <th>الجوال</th>
+                                <th>الباقة</th>
+                                <th>بداية الاشتراك</th>
+                                <th>نهاية الاشتراك</th>
+                                <th>الفواتير</th>
+                                <th>العمليات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        class="main-checkbox form-check-input"
+                                        name=""
+                                        id=""
+                                    />
+                                </td>
+                                <td>
+                                    <div class="user">
+                                        <img src="img/user-2.png" alt="user" />
+                                        <span>حمد أحمد عميل أحمد</span>
+                                    </div>
+                                </td>
+                                <td>05998447518</td>
+                                <td>الباقة الذهبية</td>
+                                <td>
+                                    <input
+                                        type="date"
+                                        name=""
+                                        id=""
+                                        class="form-control w-auto"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        type="date"
+                                        name=""
+                                        id=""
+                                        class="form-control w-auto"
+                                    />
+                                </td>
+                                <td>
+                                    <div
+                                        class="btn-holder d-flex align-items-center gap-3"
+                                    >
+                                        <button class="btn-light-green">
+                                            مفعل
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div
+                                        class="btn-holder d-flex align-items-center gap-3"
+                                    >
+                                        <button>
+                                            <i
+                                                class="fas fa-pen text-info icon-table"
+                                            ></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fas fa-trash text-danger icon-table"
+                                            ></i>
+                                        </button>
+                                        <a
+                                        data-bs-toggle="collapse"
+                                        href="#collapse-tap"
+                                        role="button"
+                                        aria-expanded="false"
+                                        ><img
+                                            class="icon-table"
+                                            src="img/icons/eye.png"
+                                            alt="icon"
+                                    /></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    <input
+                                        type="checkbox"
+                                        class="main-checkbox form-check-input"
+                                        name=""
+                                        id=""
+                                        checked
+                                    />
+                                </td>
+                                <td>
+                                    <div class="user">
+                                        <img src="img/user-2.png" alt="user" />
+                                        <span>حمد أحمد عميل أحمد</span>
+                                    </div>
+                                </td>
+                                <td>05998447518</td>
+                                <td>الباقة الذهبية</td>
+                                <td>
+                                    <input
+                                        type="date"
+                                        name=""
+                                        id=""
+                                        class="form-control w-auto"
+                                    />
+                                </td>
+                                <td>
+                                    <input
+                                        type="date"
+                                        name=""
+                                        id=""
+                                        class="form-control w-auto"
+                                    />
+                                </td>
+                                <td>
+                                    <div
+                                        class="btn-holder d-flex align-items-center gap-3"
+                                    >
+                                        <button class="btn-light-red">
+                                            غير مفعل
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div
+                                        class="w-100 buttons-container d-flex align-items-center justify-content-between"
+                                    >
+                                        <div
+                                            class="btn-holder d-flex align-items-center gap-3"
+                                        >
+                                            <button>
+                                                <i
+                                                    class="fas fa-pen text-info icon-table"
+                                                ></i>
+                                            </button>
+                                            <button>
+                                                <i
+                                                    class="fas fa-trash text-danger icon-table"
+                                                ></i>
+                                            </button>
+                                            <a
+                                                data-bs-toggle="collapse"
+                                                href="#collapse-tap"
+                                                role="button"
+                                                aria-expanded="false"
+                                                ><img
+                                                    class="icon-table"
+                                                    src="img/icons/eye.png"
+                                                    alt="icon"
+                                            /></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="collapse mt-4" id="collapse-tap">
+                    <ul class="nav main-tabs nav-tabs">
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link active"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-1"
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                            >
+                                الموظفين
+                                <span class="main-badge">3</span>
+                              </button>
+                            </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-2"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                            >
+                                العملاء
+                                <span class="main-badge">3</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-3"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                            >
+                                القضايا
+                                <span class="main-badge">3</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tab-4"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                            >
+                                الملاحظات
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3" id="myTabContent">
+                        <div
+                            class="tab-pane fade show active"
+                            id="tab-1"
+                            role="tabpanel"
+                        >
+                        <div class="table-responsive">
+                          <table class="main-table">
+                              <thead>
+                                  <tr>
+                                    <th>#</th>
+                                      <th>أسم الموظف</th>
+                                      <th>الجوال</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>احمد</td>
+                                    <td>0123456789</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>احمد</td>
+                                    <td>0123456789</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>احمد</td>
+                                    <td>0123456789</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>احمد</td>
+                                    <td>0123456789</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                            العملاء
+                        </div>
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel">
+                            القضايا
+                        </div>
+                        <div class="tab-pane fade" id="tab-4" role="tabpanel">
+                            المللاحظات
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End layout -->
+        <!-- Js Files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
