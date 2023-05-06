@@ -1306,6 +1306,46 @@ button {
   padding: 15px;
 }
 
+.issue-main-info {
+  border: 1px solid #dee2e6;
+  padding: 15px;
+}
+.issue-main-info ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.issue-main-info ul li i, .issue-main-info ul li svg {
+  font-size: 60px;
+  color: #2E5789;
+  margin-bottom: 15px;
+}
+.issue-main-info ul li .main-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #2E5789;
+}
+.issue-main-info ul li .main-title span {
+  display: inline-block;
+  font-size: 23px;
+}
+.issue-main-info ul li .title {
+  font-weight: 700;
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: #2E5789;
+}
+.issue-main-info ul li .info {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #2E5789;
+}
+.issue-main-info ul li:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
 select.form-control {
   -webkit-appearance: auto !important;
   -moz-appearance: auto !important;
