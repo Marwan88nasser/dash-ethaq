@@ -1336,11 +1336,14 @@ button {
 .issue-main-info ul li .main-title {
   margin-bottom: 15px;
   font-weight: 700;
+  background-color: #E3F5FF;
+  padding: 10px;
+  font-size: 19px;
   color: #2E5789;
 }
 .issue-main-info ul li .main-title span {
   display: inline-block;
-  font-size: 23px;
+  font-size: 20px;
 }
 .issue-main-info ul li .title {
   font-weight: 700;

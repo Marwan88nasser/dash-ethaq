@@ -243,10 +243,13 @@
       .main-title {
         margin-bottom: 15px;
         font-weight: 700;
+        background-color: #E3F5FF;
+        padding: 10px;
+        font-size: 19px;
         color: $main-color;
         span {
           display: inline-block;
-          font-size: 23px;
+          font-size: 20px;
         }
       }
       .title {
