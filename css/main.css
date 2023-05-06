@@ -1342,7 +1342,7 @@ button {
   color: #2E5789;
 }
 .issue-main-info ul li:not(:last-child) {
-  margin-bottom: 15px;
+  margin: 15px 0px;
   border-bottom: 1px solid #dee2e6;
 }
 
