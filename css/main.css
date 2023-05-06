@@ -15,6 +15,10 @@
   border-radius: 10px;
 }
 
+.bg-main {
+  background-color: #2E5789;
+}
+
 .status_info {
   padding: 8px 13px;
   color: #fff;
