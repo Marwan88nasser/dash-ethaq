@@ -1342,8 +1342,11 @@ button {
   color: #2E5789;
 }
 .issue-main-info ul li:not(:last-child) {
-  margin: 15px 0px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #dee2e6;
+}
+.issue-main-info ul li:not(:last-child) .info {
+  margin-bottom: 15px;
 }
 
 select.form-control {
