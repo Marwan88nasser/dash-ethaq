@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>المصروفات</title>
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main File Css  -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- Start layout -->
+        <nav class="main-navbar">
+            <div
+                class="container-fluid d-flex align-items-lg-center align-items-stretch flex-column flex-xl-row gap-3 justify-content-between"
+            >
+                <div class="logo">
+                    <div
+                        class="tog-active d-block d-lg-none"
+                        data-tog="true"
+                        data-active=".app"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <img src="./img/logo.svg" class="img" alt="" />
+                    <div class="text d-none d-lg-block">
+                        إيثاق لخدمات الأعمال
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-2rem">
+                    <div class="list-item d-none d-lg-flex">
+                        <div class="main-btn btn-purple">
+                            <span class="main-badge">3</span>
+                            طلبات تفعيل الاستشارة
+                            <img
+                                src="./img/icons/contract-white.svg"
+                                alt=""
+                                class="icon"
+                            />
+                        </div>
+                        <div class="main-btn btn-orange">
+                            <span class="main-badge">3</span>
+                            تراخيص وسجلات بانتظار التحقق
+                            <img
+                                src="./img/icons/user-white.svg"
+                                alt=""
+                                class="icon"
+                            />
+                        </div>
+                        <div class="main-btn">
+                            الطلبات الحديثة
+                            <img
+                                src="./img/icons/bell-white.svg"
+                                alt=""
+                                class="icon"
+                            />
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-2rem">
+                        <div class="dropdown icon-nav">
+                            <div class="main-badge badge-info">0</div>
+                            <button
+                                class="dropdown-toggle icon-nav"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    src="./img/icons/msg.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown icon-nav">
+                            <div class="main-badge">0</div>
+                            <button
+                                class="dropdown-toggle icon-nav"
+                                type="button"
+                                id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    src="./img/icons/bell.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </button>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownMenuButton1"
+                            >
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown info-user ms-auto">
+                        <button
+                            class="dropdown-toggle d-flex align-items-center gap-2 content"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <div class="text">
+                                <div class="name">
+                                    <i class="fas fa-angle-down"></i>
+                                    Name Of the manager
+                                </div>
+                                <div class="dic">Admin Manager</div>
+                            </div>
+                            <div class="img">
+                                <img
+                                    src="./img/icons/user-black.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </div>
+                        </button>
+                        <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                        >
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    تسجيل الخروج
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="app">
+            <div class="sidebar">
+                <div
+                    class="tog-active d-none d-lg-block"
+                    data-tog="true"
+                    data-active=".app"
+                >
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="list">
+                    <li class="list-item active">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                الرئيسية
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                اشعارات المشتركين
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a
+                            data-bs-toggle="collapse"
+                            href="#collapse-1"
+                            aria-expanded="false"
+                        >
+                            <div>
+                                <i class="fa-solid fa-gear icon"></i>
+                                الإعدادات
+                            </div>
+                            <i class="fa-solid fa-angle-right arrow"></i>
+                        </a>
+                    </li>
+                    <div id="collapse-1" class="collapse item-collapse">
+                        <li class="list-item">
+                            <a href="settings.html" class="">
+                                <div>
+                                    <i class="fa-solid fa-gear icon"></i>
+                                    الإعدادات
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <li class="list-item">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                المشرفين
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="index.html">
+                            <div>
+                                <i class="fa-solid fa-grip"></i>
+                                المشتركين
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-side">
+                <div class="main-title">
+                    <div class="small">الرئيسية</div>
+                    <div class="large">المصاريف</div>
+                </div>
+                <ul
+                    class="nav nav-tabs step-anchor my-4"
+                    id="myTab"
+                    role="tablist"
+                >
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link active"
+                            data-bs-toggle="pill"
+                            data-bs-target="#tap-1"
+                            type="button"
+                            role="tab"
+                            aria-selected="true"
+                        >
+                            <i class="fa-solid fa-circle-info icon"></i>
+                            <span class="title"> المصروفات</span>
+                            <div class="title-small">أنشئ مصروف</div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link"
+                            data-bs-toggle="pill"
+                            data-bs-target="#tap-2"
+                            type="button"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            <i class="fa-solid fa-chart-bar icon"></i>
+                            <span class="title">نوع المصروف</span>
+                            <div class="title-small">أضف نوع مصروف</div>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div
+                        class="tab-pane fade show active"
+                        id="tap-1"
+                        role="tabpanel"
+                    >
+                        <form action="" id="collapse-add" class="collapse mb-4">
+                            <div class="issue-main-info">
+                                <div class="content-header">
+                                    اضف مصروف جديد
+                                    <a
+                                        data-bs-toggle="collapse"
+                                        href="#collapse-add"
+                                        aria-expanded="false"
+                                        class="main-btn btn-main-color"
+                                    >
+                                        إغلاق <i class="fas fa-minus"></i>
+                                    </a>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <label class="special-input">
+                                            <span>العنوان</span>
+                                            <div class="box-input">
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    id=""
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <label class="special-label" for="tax">
+                                            قسم المصروف</label
+                                        >
+                                        <select
+                                            name=""
+                                            id="tax"
+                                            class="form-select select-setting"
+                                        >
+                                            <option value="">تجربة</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <label class="special-input">
+                                            <span>المبلغ</span>
+                                            <div class="box-input">
+                                                <input
+                                                    type="number"
+                                                    name=""
+                                                    id=""
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3">
+                                        <label class="special-input">
+                                            <span> هل يوجد ضريبة ؟ </span>
+                                            <input
+                                                type="checkbox"
+                                                name=""
+                                                id=""
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <a class="main-btn"> حفظ </a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="issue-main-info">
+                            <div
+                                class="bar-obtions d-flex align-items-center justify-content-between flex-wrap gap-3 mb-4"
+                            >
+                                <div
+                                    class="d-flex align-items-center gap-2 flex-wrap"
+                                >
+                                    <a
+                                        data-bs-toggle="collapse"
+                                        href="#collapse-add"
+                                        aria-expanded="false"
+                                        class="main-btn btn-main-color"
+                                    >
+                                        إضافة <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="box-search">
+                                    <img
+                                        src="img/icons/search.png"
+                                        alt="icon"
+                                    />
+                                    <input
+                                        type="search"
+                                        name=""
+                                        id=""
+                                        placeholder="بحث"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="main-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>العنوان</th>
+                                            <th>قسم المصروف</th>
+                                            <th>المبلغ</th>
+                                            <th>شامل الضريبة</th>
+                                            <th>غير شامل الضريبة</th>
+                                            <th>العمليات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>تجربة مصروف</td>
+                                            <td>تجربة قسم</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div
+                                                    class="btn-holder d-flex align-items-center gap-3"
+                                                >
+                                                    <button>
+                                                        <i
+                                                            class="fas fa-pen text-info icon-table"
+                                                        ></i>
+                                                    </button>
+                                                    <button>
+                                                        <i
+                                                            class="fas fa-trash text-danger icon-table"
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tap-2" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <form action="" class="issue-main-info">
+                                    <div class="content-header">
+                                        اضف نوع مصروف جديد
+                                    </div>
+                                    <label class="special-input">
+                                        <span>نوع المصروف</span>
+                                        <div class="box-input">
+                                            <input type="text" name="" id="" />
+                                        </div>
+                                    </label>
+                                    <div
+                                        class="d-flex justify-content-center mt-4"
+                                    >
+                                        <a class="main-btn"> حفظ </a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-8">
+                             <form action="" class="issue-main-info">
+                              <div class="content-header">
+                               عرض كل أنواع المصروفات
+                              </div>
+                              <div
+                                class="bar-obtions d-flex align-items-center justify-content-end flex-wrap gap-3 mb-4"
+                            >
+                                <div class="box-search">
+                                    <img
+                                        src="img/icons/search.png"
+                                        alt="icon"
+                                    />
+                                    <input
+                                        type="search"
+                                        name=""
+                                        id=""
+                                        placeholder="بحث"
+                                    />
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="main-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>نوع المصروف	</th>
+                                            <th>أنشئت في	</th>
+                                            <th>العمليات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>
+                                                <div
+                                                    class="btn-holder d-flex align-items-center gap-3"
+                                                >
+                                                    <button>
+                                                        <i
+                                                            class="fas fa-pen text-info icon-table"
+                                                        ></i>
+                                                    </button>
+                                                    <button>
+                                                        <i
+                                                            class="fas fa-trash text-danger icon-table"
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                          </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End layout -->
+        <!-- Js Files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
