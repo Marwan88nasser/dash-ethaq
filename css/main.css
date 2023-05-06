@@ -1117,6 +1117,10 @@ button {
 .box-data .bar-name .box-icon img {
   width: 23px;
 }
+.box-data .bar-name .box-icon i, .box-data .bar-name .box-icon svg {
+  font-size: 23px;
+  color: #fff;
+}
 .box-data .amount {
   font-weight: 700;
   font-size: 32px;
@@ -1164,6 +1168,15 @@ button {
   background-color: #8D1EE5;
 }
 .box-data.box-purple .box-icon img {
+  width: 27px;
+}
+.box-data.box-red {
+  background-color: #fde7e7;
+}
+.box-data.box-red .box-icon {
+  background-color: #FF3636;
+}
+.box-data.box-red .box-icon img {
   width: 27px;
 }
 
@@ -1331,20 +1344,32 @@ button {
 .issue-main-info ul li .main-title {
   margin-bottom: 15px;
   font-weight: 700;
+  background-color: #E3F5FF;
+  padding: 10px;
+  font-size: 19px;
   color: #2E5789;
 }
 .issue-main-info ul li .main-title span {
   display: inline-block;
-  font-size: 23px;
+  font-size: 20px;
 }
 .issue-main-info ul li .title {
   font-weight: 700;
   margin-bottom: 13px;
   font-size: 14px;
+  padding: 10px;
   color: #2E5789;
 }
 .issue-main-info ul li .title.red {
   color: #FF3636;
+}
+.issue-main-info ul li .title.bg-red {
+  background-color: #fde7e7;
+  color: #FF3636;
+}
+.issue-main-info ul li .title.bg-green {
+  color: #0FC859;
+  background-color: #E3FFE6;
 }
 .issue-main-info ul li .info-grey {
   font-weight: 600;
@@ -1357,6 +1382,9 @@ button {
   margin-bottom: 5px;
   font-size: 14px;
   color: #2E5789;
+}
+.issue-main-info ul li .info:last-child {
+  margin-bottom: 15px;
 }
 .issue-main-info ul li:not(:last-child) {
   margin-bottom: 15px;

@@ -20,6 +20,10 @@
       img {
         width: 23px;
       }
+      i,svg {
+        font-size: 23px;
+        color: #fff;
+      }
     }
   }
   .amount {
@@ -68,6 +72,15 @@
     background-color: $purple-color-light;
     .box-icon {
       background-color: $purple-color;
+      img {
+        width: 27px;
+      }
+    }
+  }
+  &.box-red {
+    background-color: $red-color-light;
+    .box-icon {
+      background-color: $red-color;
       img {
         width: 27px;
       }
@@ -232,19 +245,31 @@
       .main-title {
         margin-bottom: 15px;
         font-weight: 700;
+        background-color: #E3F5FF;
+        padding: 10px;
+        font-size: 19px;
         color: $main-color;
         span {
           display: inline-block;
-          font-size: 23px;
+          font-size: 20px;
         }
       }
       .title {
         font-weight: 700;
         margin-bottom: 13px;
         font-size: 14px;
+        padding: 10px;
         color: $main-color;
         &.red {
           color: $red-color;
+        }
+        &.bg-red {
+          background-color: #fde7e7;
+          color: $red-color;
+        }
+        &.bg-green {
+          color: $green-color;
+          background-color: #E3FFE6;
         }
       }
       .info-grey {
@@ -258,6 +283,9 @@
         margin-bottom: 5px;
         font-size: 14px;
         color: $main-color;
+        &:last-child {
+          margin-bottom: 15px;
+        }
       }
       &:not(:last-child) {
         margin-bottom: 15px;
