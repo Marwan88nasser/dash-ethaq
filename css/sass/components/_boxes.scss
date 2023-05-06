@@ -6,6 +6,7 @@
     @include flex-justify(space-between);
     margin-bottom: 2px;
     .name {
+      flex: 1;
       font-size: 23px;
       font-weight: 600;
       margin: 0;
@@ -229,7 +230,8 @@
 
 .issue-main-info {
   border: 1px solid #dee2e6;
-  padding: 15px;
+  border-radius: 0.375rem;
+  padding: 16px;
   ul {
     padding: 0;
     margin: 0;
@@ -258,6 +260,9 @@
         font-size: 14px;
         padding: 10px;
         color: $main-color;
+        &.red {
+          color: $red-color;
+        }
         &.bg-red {
           background-color: #fde7e7;
           color: $red-color;
@@ -266,6 +271,12 @@
           color: $green-color;
           background-color: #E3FFE6;
         }
+      }
+      .info-grey {
+        font-weight: 600;
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: $dark-grey;
       }
       .info {
         font-weight: 600;

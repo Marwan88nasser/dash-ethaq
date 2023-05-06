@@ -20,12 +20,18 @@
   &.btn-purple {
     background-color: $purple-color;
   }
+  &.btn-blue {
+    background-color: $blue-color;
+  }
   &.btn-main-color {
     background-color: $main-color;
   }
   .icon {
     width: 20px;
     height: auto;
+  }
+  svg {
+    font-size: 20px;
   }
   .main-badge {
     position: absolute;
