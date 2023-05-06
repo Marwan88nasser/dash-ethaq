@@ -1329,7 +1329,7 @@ button {
   list-style: none;
 }
 .issue-main-info ul li i, .issue-main-info ul li svg {
-  font-size: 60px;
+  font-size: 45px;
   color: #2E5789;
   margin-bottom: 15px;
 }
@@ -1346,7 +1346,16 @@ button {
   font-weight: 700;
   margin-bottom: 13px;
   font-size: 14px;
+  padding: 10px;
   color: #2E5789;
+}
+.issue-main-info ul li .title.bg-red {
+  background-color: #fde7e7;
+  color: #FF3636;
+}
+.issue-main-info ul li .title.bg-green {
+  color: #0FC859;
+  background-color: #E3FFE6;
 }
 .issue-main-info ul li .info {
   font-weight: 600;

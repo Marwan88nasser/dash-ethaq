@@ -236,7 +236,7 @@
     list-style: none;
     li {
       i,svg {
-        font-size: 60px;
+        font-size: 45px;
         color: $main-color;
         margin-bottom: 15px;
       }
@@ -253,7 +253,16 @@
         font-weight: 700;
         margin-bottom: 13px;
         font-size: 14px;
+        padding: 10px;
         color: $main-color;
+        &.bg-red {
+          background-color: #fde7e7;
+          color: $red-color;
+        }
+        &.bg-green {
+          color: $green-color;
+          background-color: #E3FFE6;
+        }
       }
       .info {
         font-weight: 600;
