@@ -19,6 +19,10 @@
       img {
         width: 23px;
       }
+      i,svg {
+        font-size: 23px;
+        color: #fff;
+      }
     }
   }
   .amount {
@@ -67,6 +71,15 @@
     background-color: $purple-color-light;
     .box-icon {
       background-color: $purple-color;
+      img {
+        width: 27px;
+      }
+    }
+  }
+  &.box-red {
+    background-color: $red-color-light;
+    .box-icon {
+      background-color: $red-color;
       img {
         width: 27px;
       }

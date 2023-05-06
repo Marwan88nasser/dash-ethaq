@@ -1110,6 +1110,10 @@ button {
 .box-data .bar-name .box-icon img {
   width: 23px;
 }
+.box-data .bar-name .box-icon i, .box-data .bar-name .box-icon svg {
+  font-size: 23px;
+  color: #fff;
+}
 .box-data .amount {
   font-weight: 700;
   font-size: 32px;
@@ -1157,6 +1161,15 @@ button {
   background-color: #8D1EE5;
 }
 .box-data.box-purple .box-icon img {
+  width: 27px;
+}
+.box-data.box-red {
+  background-color: #fde7e7;
+}
+.box-data.box-red .box-icon {
+  background-color: #FF3636;
+}
+.box-data.box-red .box-icon img {
   width: 27px;
 }
 
