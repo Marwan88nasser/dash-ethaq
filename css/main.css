@@ -989,12 +989,18 @@ button {
 .main-btn.btn-purple {
   background-color: #8D1EE5;
 }
+.main-btn.btn-blue {
+  background-color: #1E88E5;
+}
 .main-btn.btn-main-color {
   background-color: #2E5789;
 }
 .main-btn .icon {
   width: 20px;
   height: auto;
+}
+.main-btn svg {
+  font-size: 20px;
 }
 .main-btn .main-badge {
   position: absolute;
@@ -1094,6 +1100,7 @@ button {
   margin-bottom: 2px;
 }
 .box-data .bar-name .name {
+  flex: 1;
   font-size: 23px;
   font-weight: 600;
   margin: 0;
@@ -1308,7 +1315,8 @@ button {
 
 .issue-main-info {
   border: 1px solid #dee2e6;
-  padding: 15px;
+  border-radius: 0.375rem;
+  padding: 16px;
 }
 .issue-main-info ul {
   padding: 0;
@@ -1316,7 +1324,7 @@ button {
   list-style: none;
 }
 .issue-main-info ul li i, .issue-main-info ul li svg {
-  font-size: 60px;
+  font-size: 45px;
   color: #2E5789;
   margin-bottom: 15px;
 }
@@ -1334,6 +1342,15 @@ button {
   margin-bottom: 13px;
   font-size: 14px;
   color: #2E5789;
+}
+.issue-main-info ul li .title.red {
+  color: #FF3636;
+}
+.issue-main-info ul li .info-grey {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #6b7280;
 }
 .issue-main-info ul li .info {
   font-weight: 600;
